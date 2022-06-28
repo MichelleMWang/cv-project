@@ -21,11 +21,19 @@ class Education extends React.Component {
         this.setState({edu}); 
     }
 
+    handleSchoolChange = (e) => {
+        const { name, id } = e.target; 
+        console.log(name + ' and ' + id)
+        this.setState((prevState) => {
+
+        })
+    }
+
     renderEducation = () => {
         return this.state.education.map((ticket) => {
             return(
                 <form key={ticket.id}>
-                    <input type="Text" placeholder="School Name"></input>
+                    <input type="Text" placeholder="School Name" value={ticket.school} onChange={this.handleSchoolChange}></input>
                     <input type="text" placeholder="Title of Study"></input>
                     <label name="start date">Start Date: </label>
                     <input type="date" name="start date"></input>

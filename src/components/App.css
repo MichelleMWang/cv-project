@@ -1,0 +1,42 @@
+body {
+    margin: 0px; 
+    padding: 0px; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    background: linear-gradient(to bottom, rgb(235, 255, 252), rgb(244, 242, 255))
+}
+
+.App {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 1rem; 
+
+}
+
+.App > div {
+    margin: 1rem; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+input {
+    padding: .5rem; 
+    margin: .5rem; 
+}
+
+#logo-1{
+    color: rgb(96, 96, 135); 
+}
+#logo-2{
+    color: rgb(104, 163, 140); 
+}
+
+button {
+    background-color: rgb(237, 245, 255);
+    padding: .5rem; 
+
+}
+button:hover{
+    background-color:rgb(195, 203, 213); 
+    cursor: pointer; 
+}
